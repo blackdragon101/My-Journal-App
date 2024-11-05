@@ -1,0 +1,90 @@
+body {
+    background-image: url('../images/sign-up-new.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inter',sans-serif;
+    font-family: 'Grey Qo', serif; /* Default font for body text */
+}
+h1 {
+    font-family: 'Grey Qo', serif; /* Apply Grey Qo font to headings */
+}
+p {
+    font-family: 'PT Serif', serif; /* Apply PT Serif font to paragraphs */
+}
+.heading-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 240px;
+    width: fit-content;
+    background-color: #472F1B;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 90px;
+}
+.sign-up-heading {
+    font-weight: 400;
+    font-size: 45px;
+    color: #FAEFEB;
+}
+.sign-up-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+    top: 130px;
+    left: 310px;
+    width: 360px;
+    height: 260px;
+}
+.email-box {
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+.password-box {
+    position: relative;
+}
+.password-input, .email-input {
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #849E6D;
+    border-style: solid;
+}
+.password-input:focus ,.email-input:focus {
+    outline: none;
+    border-color: #849E6D;
+}
+.info-give-button-div {
+    margin-top: 33px;
+}
+.info-give-button {
+    color: #FAEFEB;
+    background-color: #6b8852;
+    font-size: 32px;
+    font-family: 'Grey Qo', serif;
+    border-radius: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: none;
+}
+.info-give-button:hover {
+    cursor: pointer;
+    background-color: #849E6D;
+}
+.info-give-button:active {
+    background-color: #6b8852;
+    opacity: 0.6;
+}
+.password-show-img {
+    position: absolute;
+    height: 15px;
+    right: 16px;
+    top: 10px;
+}

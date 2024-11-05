@@ -1,0 +1,55 @@
+body {
+    background-image: url('../images/homepage2.png');
+    background-repeat: no-repeat;
+    font-family: 'Grey Qo', serif; /* Default font for body text */
+}
+h1 {
+    font-family: 'Grey Qo', serif; /* Apply Grey Qo font to headings */
+}
+p {
+    font-family: 'PT Serif', serif; /* Apply PT Serif font to paragraphs */
+}
+.home-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 130px;
+    margin-top: 200px;
+    margin-left: 170px;
+    column-width: 50px;
+}
+.cal-button, .quote-button, .blog-button, .journal-button, .diary-button, .photos-button {
+    height: 32px;
+    width: 90px;
+    font-family: 'Grey Qo', serif;
+    font-size: 24px;
+    background-color: #472F1B;
+    color: #FAEFEB;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.cal-button:hover, .quote-button:hover, .blog-button:hover, .journal-button:hover, .diary-button:hover, .photos-button:hover {
+    opacity: 0.9;
+}
+.cal-button:active, .quote-button:active, .blog-button:active, .journal-button:active, .diary-button:active, .photos-button:active {
+    opacity: 0.7;
+}
+.cal-button {
+    margin-right: 100px;
+    margin-top: 18px;
+}
+.journal-button {
+    margin-top: 25px;
+}
+.diary-button {
+    margin-top: 28px;
+}
+.photos-button {
+    margin-top: 25px;
+    margin-right: 130px;
+}
+.blog-button {
+    margin-top: 10px;
+}
+

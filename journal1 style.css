@@ -1,0 +1,68 @@
+body {
+    font-family: 'Grey Qo', serif;
+    background-color: #FAEFEB;
+}
+h1 {
+    font-family: 'Grey Qo', serif; /* Apply Grey Qo font to headings */
+}
+p {
+    font-family: 'PT Serif', serif; /* Apply PT Serif font to paragraphs */
+}
+.container1 {
+    background-image: url("../images/journal-opt1.png");
+    background-size: cover; /* Makes sure the entire image fits within the container */
+    background-position: center;
+    position: relative; /* Keeps it relative to the screen without scrolling */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.journal1-writing {
+    margin: 0;
+    padding-top: 0;
+    font-size: 16px;
+    border: none;
+    color: black;
+    background: transparent;
+    line-height: 2.7em;
+    resize: none !important;
+    outline: none;
+    position: absolute;
+    top: 85px;
+    left: 100px;
+    width: 815px;
+    height: 335px;
+}
+.view-journal-text {
+    height: 32px;
+    width: 130px;
+    font-family: 'Grey Qo', serif;
+    font-size: 24px;
+    background-color: #472F1B;
+    color: #FAEFEB;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    bottom: 5px;
+    left: 450px;
+}
+.save-button {
+    height: 32px;
+    width: 70px;
+    font-family: 'Grey Qo', serif;
+    font-size: 24px;
+    background-color: #472F1B;
+    color: #FAEFEB;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    bottom: 5px;
+    left: 300px;
+}
+.save-button,.view-journal-text {
+    margin-top: 25px;
+}
