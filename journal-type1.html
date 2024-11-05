@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal_style1.com</title>
+    <link rel="stylesheet" href="styles/journal1 style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <textarea class="journal1-writing" id="1" placeholder="Start from here..."></textarea>
+    </div>
+        <button class="save-button" onclick="savejournal()">Save</button>
+        <button class="view-journal-text" onclick="viewjournal()">View recent text</button>
+</body>
+<script>
+    function savejournal() {
+        const journalText = document.querySelector('.journal1-writing').value;
+        if (journalText != "") {
+            localStorage.setItem('journal_entry',journalText);
+            alert("Journal saved!!");
+        }
+        else {
+            alert("You cannot save an empty journal.")
+        }
+    }
+    function viewjournal() {
+        const savedText = localStorage.getItem('journal_entry');
+        if (savedText) {
+            document.querySelector('.journal1-writing').value = savedText;
+        }
+        else {
+            alert("No previous text files!");
+        }
+    }
+</script>
+</html>
